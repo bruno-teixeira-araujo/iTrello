@@ -4,6 +4,7 @@ Easy way to analyse your Trello boards
 ## Clone
 
 Clone:
+
 		git clone https://github.com/bruno-teixeira-araujo/iTrello.git
 
 ## Usage
