@@ -50,7 +50,7 @@ public class RestCardRepositoryImpl implements CardRepository {
 			}
 			
 		} catch (ParseException e) {
-			throw new RuntimeException();
+			throw new RuntimeException(e);
 		}
 		
 		return cards;

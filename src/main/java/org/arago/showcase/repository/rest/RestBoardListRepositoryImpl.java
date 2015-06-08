@@ -40,7 +40,7 @@ public class RestBoardListRepositoryImpl implements BoardListRepository {
 			}
 			
 		} catch (ParseException e) {
-			throw new RuntimeException();
+			throw new RuntimeException(e);
 		}
 		
 		return boardLists;

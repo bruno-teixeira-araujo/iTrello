@@ -40,7 +40,7 @@ public class DashboardDueDateByBoardCalculator implements DashboardCalculator {
 		return new LinkedList<DashboardElement>(dashboard.values());
 	}
 	
-	public void calculatePercentage(DashboardElement element) {
+	private void calculatePercentage(DashboardElement element) {
 		if(element.getNrDashboardTotalElems() != BigDecimal.valueOf(0)) {
 			element.setPercent(element.getNrValidElems().multiply(BigDecimal.valueOf(100.0)).divide(element.getNrDashboardTotalElems(), RoundingMode.HALF_UP));
 		} else {
